@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DevWeb\\MeuCrud.Api\\MeuCrud.Api.csproj": {}
+    "D:\\Facul\\DevWeb\\DesWeb\\MeuCrud.Api\\MeuCrud.Api.csproj": {}
   },
   "projects": {
-    "D:\\DevWeb\\MeuCrud.Api\\MeuCrud.Api.csproj": {
+    "D:\\Facul\\DevWeb\\DesWeb\\MeuCrud.Api\\MeuCrud.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DevWeb\\MeuCrud.Api\\MeuCrud.Api.csproj",
+        "projectUniqueName": "D:\\Facul\\DevWeb\\DesWeb\\MeuCrud.Api\\MeuCrud.Api.csproj",
         "projectName": "MeuCrud.Api",
-        "projectPath": "D:\\DevWeb\\MeuCrud.Api\\MeuCrud.Api.csproj",
+        "projectPath": "D:\\Facul\\DevWeb\\DesWeb\\MeuCrud.Api\\MeuCrud.Api.csproj",
         "packagesPath": "C:\\Users\\leozi\\.nuget\\packages\\",
-        "outputPath": "D:\\DevWeb\\MeuCrud.Api\\obj\\",
+        "outputPath": "D:\\Facul\\DevWeb\\DesWeb\\MeuCrud.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leozi\\AppData\\Roaming\\NuGet\\NuGet.Config"
