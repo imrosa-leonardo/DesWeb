@@ -14,6 +14,7 @@ function ProdutoTable({ produtos, searchTerm, onSearchChange, onEditar, onDeleta
             {/* Search Bar */}
             <div className="p-4 border-b border-gray-200">
                 <div className="relative">
+                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                     <input
                         type="text"
                         placeholder="Buscar por nome ou descrição..."
@@ -28,7 +29,9 @@ function ProdutoTable({ produtos, searchTerm, onSearchChange, onEditar, onDeleta
                 <div className="flex flex-col items-center justify-center py-16 text-gray-400">
                     <PackageOpen className="w-12 h-12 mb-3" />
                     <p className="text-sm font-medium">
-                        {searchTerm ? 'Nenhum produto encontrado para sua busca.' : 'Nenhum produto cadastrado.'}
+                        {searchTerm 
+                        ? 'Nenhum produto encontrado para sua busca.' 
+                        : 'Nenhum produto cadastrado.'}
                     </p>
                 </div>
             ) : (

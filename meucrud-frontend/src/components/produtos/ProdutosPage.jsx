@@ -123,7 +123,7 @@ function ProdutosPage() {
                 <ProdutoTable
                     produtos={produtos}
                     searchTerm={searchTerm}
-                    onSearchTermChange={setSearchTerm}
+                    onSearchChange={setSearchTerm}
                     onEditar={handleEditar}
                     onDeletar={handleConfirmarDelete}
                 />
