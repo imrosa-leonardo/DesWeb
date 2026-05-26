@@ -25,7 +25,7 @@ export const criarProduto = async (produto) => {
 };
 // Atualiza um produto existente = PUT
 export const atualizarProduto = async (produto) => {
-    const response = await api.put('/', produto);
+    const response = await api.put(`/${produto.id}`, produto);
     return response.data;
 };
 // Deleta um produto por ID = DELETE
