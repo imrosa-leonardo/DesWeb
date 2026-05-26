@@ -53,10 +53,10 @@ function ProdutosPage() {
             try {
                 if (produtoEditando) {
                     await atualizarProduto(produto);
-                    toast.sucess(`Produto "${produto.nome}" atualizado com sucesso`);
+                    toast.success(`Produto "${produto.nome}" atualizado com sucesso`);
                 } else {
                     await criarProduto(produto);
-                    toast.sucess(`Produto "${produto.nome}" cadastrado com sucesso`);
+                    toast.success(`Produto "${produto.nome}" cadastrado com sucesso`);
                 }
                 setIsFormModalOpen(false);
                 setProdutoEditando(null);
@@ -67,7 +67,7 @@ function ProdutosPage() {
             }
         };
 
-        const handleConfirmarDeletar = (produto) => {
+        const handleConfirmarDelete = (produto) => {
             setProdutoDeletando(produto);
             setIsDeleteDialogOpen(true);
         };
@@ -75,7 +75,7 @@ function ProdutosPage() {
         const handleDeletar = async () => {
             try {
                 await deletarProduto(produtoDeletando.id);
-                toast.sucess(`Produto "${produtoDeletando.nome}" excluído com sucesso`);
+                toast.success(`Produto "${produtoDeletando.nome}" excluído com sucesso`);
                 setIsDeleteDialogOpen(false);
                 setProdutoDeletando(null);
                 await carregarProdutos();
@@ -125,7 +125,7 @@ function ProdutosPage() {
                     searchTerm={searchTerm}
                     onSearchTermChange={setSearchTerm}
                     onEditar={handleEditar}
-                    onDeletar={handleConfirmarDeletar}
+                    onDeletar={handleConfirmarDelete}
                 />
              )}
 
